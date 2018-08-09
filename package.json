@@ -4,7 +4,18 @@
   "description": "A minimal Electron application",
   "main": "main.js",
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "pack": "build --win --dir",
+    "dist": "build --win"
+  },
+  "build": {
+    "appId": "org.shennongmin.QuickStart",
+    "copyright": "Open Totally",
+    "compression": "normal",
+    "productName": "HelloWorld",
+    "win": {
+      "icon": "res/fish.png"
+    }
   },
   "repository": "https://github.com/electron/electron-quick-start",
   "keywords": [
